@@ -4,6 +4,8 @@ import {
   IoLogoGithub,
   IoLogoInstagram,
   IoMedal,
+  IoPeople,
+  IoCreate,
 } from "react-icons/io5";
 
 function App() {
@@ -43,26 +45,53 @@ function App() {
       {/* second section */}
       <h1 className="text-white">Get To Know</h1>
       <h2 className="text-3xl font-bold text-white">About Me</h2>
-      {/* <div className="flex justify-evenly m-10">
+      <div className="m-10 grid grid-cols-2">
         <div>
           <img
             src={require("./assets/me.jpg")}
             alt="me"
-            className="w-96 h-96 rounded-[20px]"
+            className="w-96 h-96 rounded-[20px] mx-auto"
           />
         </div>
-        <div className="flex justify-around">
-          <div className="bg-sky-500 mr-2 p-2 h-28 rounded-lg">
-            <p>
-              <IoMedal className="text-white mx-auto" size="1.5em" />
-            </p>
-            <p className="mt-2 mb-2">Experience</p>
-            <p>2+ Years Working</p>
+        <div className="">
+          <div className="flex justify-start mb-5">
+            <div className="bg-sky-500 p-2 mr-5 rounded-lg">
+              <p>
+                <IoMedal className="text-white mx-auto" size="1.5em" />
+              </p>
+              <p className="mt-2 mb-2">Experience</p>
+              <p>2+ Years Working</p>
+            </div>
+            <div className="bg-sky-500 p-2 mr-5 rounded-lg">
+              <p>
+                <IoPeople className="text-white mx-auto" size="1.5em" />
+              </p>
+              <p className="mt-2 mb-2">Clients</p>
+              <p>300+ Worldwide</p>
+            </div>
+            <div className="bg-sky-500 p-2 rounded-lg">
+              <p>
+                <IoCreate className="text-white mx-auto" size="1.5em" />
+              </p>
+              <p className="mt-2 mb-2">Projects</p>
+              <p>80+ Completed</p>
+            </div>
           </div>
-          <div>Clients</div>
-          <div>Projects</div>
+          <p className="w-[28rem] text-start text-white mb-3">
+            In this practical react js project tutorial, I'm going to teach you,
+            step-by-step, how to create and deploy a fully responsive personal
+            portfolio website from scratch! By the end of this video, you will
+            In this practical react js project tutorial, I'm going to teach you,
+            step-by-step, how to create and deploy a fully responsive personal
+            portfolio website from scratch! By the end of this video, you will
+          </p>
+          <div className="w-[6rem]">
+            <button className="rounded-md bg-sky-400 content-start p-3">
+              Let's Talk
+            </button>
+          </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
