@@ -11,15 +11,15 @@ import {
 
 function App() {
   return (
-    <div className="App bg-sky-900">
+    <div className="bg-sky-900">
       {/* first section */}
       <div className="pt-8 pb-8">
-        <div className="mb-5">
+        <div className="mb-5 text-center ">
           <h1 className="text-white">Hello i'm</h1>
           <h2 className="text-3xl font-bold text-white">Ibra Nurlette</h2>
           <h1 className="text-white">Frontend Developer</h1>
         </div>
-        <div className="mb-8">
+        <div className="mb-8 text-center	">
           <button className="rounded-md text-sky-500 border-2 border-blue-500 p-3 mr-4">
             Download Cv
           </button>
@@ -44,8 +44,8 @@ function App() {
         </div>
       </div>
       {/* second section */}
-      <h1 className="text-white">Get To Know</h1>
-      <h2 className="text-3xl font-bold text-white">About Me</h2>
+      <h1 className="text-white text-center">Get To Know</h1>
+      <h2 className="text-3xl font-bold text-white text-center">About Me</h2>
       <div className="m-10 grid grid-cols-2">
         <div>
           <img
@@ -95,8 +95,10 @@ function App() {
       </div>
 
       {/* third section */}
-      <h1 className="text-white">What Skills I have</h1>
-      <h2 className="text-3xl font-bold text-white">My Experience</h2>
+      <h1 className="text-white text-center">What Skills I have</h1>
+      <h2 className="text-3xl font-bold text-white text-center">
+        My Experience
+      </h2>
       <div className="m-10 flex justify-center">
         <div className="bg-sky-500 py-12 px-10 mr-7 w-[32rem] rounded-[20px]">
           <h1 className="text-2xl mb-8 font-bold">Frontend developer</h1>
@@ -205,6 +207,84 @@ function App() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Four section */}
+      <h1 className="text-white text-center">My Recent Work</h1>
+      <h2 className="text-3xl font-bold text-white text-center">Portfolio</h2>
+      <div className="m-10 grid grid-cols-3 mx-80 ">
+        <div className="bg-sky-500 p-5 rounded-[20px]	mr-5">
+          <img
+            src={require("./assets/me.jpg")}
+            alt="me"
+            className="w-60 h-60 rounded-[20px] mx-auto"
+          />
+          <h1 className="text-lg text-white text-start mt-3">App 1</h1>
+          <button className="rounded-md bg-sky-400 justify-items-start p-3 mr-3 mt-5">
+            Github
+          </button>
+          <button className="rounded-md bg-sky-400 p-3">Live Demo</button>
+        </div>
+        <div className="bg-sky-500 p-5 rounded-[20px]	mr-5">
+          <img
+            src={require("./assets/me.jpg")}
+            alt="me"
+            className="w-60 h-60 rounded-[20px] mx-auto"
+          />
+          <h1 className="text-lg text-white text-start mt-3">App 2</h1>
+          <button className="rounded-md bg-sky-400 justify-items-start p-3 mr-3 mt-5">
+            Github
+          </button>
+          <button className="rounded-md bg-sky-400 p-3">Live Demo</button>
+        </div>
+        <div className="bg-sky-500 p-5 rounded-[20px]	mr-5">
+          <img
+            src={require("./assets/me.jpg")}
+            alt="me"
+            className="w-60 h-60 rounded-[20px] mx-auto"
+          />
+          <h1 className="text-lg text-white text-start mt-3">App 3</h1>
+          <button className="rounded-md bg-sky-400 justify-items-start p-3 mr-3 mt-5">
+            Github
+          </button>
+          <button className="rounded-md bg-sky-400 p-3">Live Demo</button>
+        </div>
+        <div className="bg-sky-500 p-5 rounded-[20px]	mr-5 mt-5">
+          <img
+            src={require("./assets/me.jpg")}
+            alt="me"
+            className="w-60 h-60 rounded-[20px] mx-auto"
+          />
+          <h1 className="text-lg text-white text-start mt-3">App 4</h1>
+          <button className="rounded-md bg-sky-400 justify-items-start p-3 mr-3 mt-5">
+            Github
+          </button>
+          <button className="rounded-md bg-sky-400 p-3">Live Demo</button>
+        </div>
+        <div className="bg-sky-500 p-5 rounded-[20px]	mr-5 mt-5">
+          <img
+            src={require("./assets/me.jpg")}
+            alt="me"
+            className="w-60 h-60 rounded-[20px] mx-auto"
+          />
+          <h1 className="text-lg text-white text-start mt-3">App 5</h1>
+          <button className="rounded-md bg-sky-400 justify-items-start p-3 mr-3 mt-5">
+            Github
+          </button>
+          <button className="rounded-md bg-sky-400 p-3">Live Demo</button>
+        </div>
+        <div className="bg-sky-500 p-5 rounded-[20px]	mr-5 mt-5">
+          <img
+            src={require("./assets/me.jpg")}
+            alt="me"
+            className="w-60 h-60 rounded-[20px] mx-auto"
+          />
+          <h1 className="text-lg text-white text-start mt-3">App 6</h1>
+          <button className="rounded-md bg-sky-400 justify-items-start p-3 mr-3 mt-5">
+            Github
+          </button>
+          <button className="rounded-md bg-sky-400 p-3">Live Demo</button>
         </div>
       </div>
     </div>
