@@ -6,6 +6,7 @@ import {
   IoMedal,
   IoPeople,
   IoCreate,
+  IoCheckmarkCircle,
 } from "react-icons/io5";
 
 function App() {
@@ -89,6 +90,120 @@ function App() {
             <button className="rounded-md bg-sky-400 content-start p-3">
               Let's Talk
             </button>
+          </div>
+        </div>
+      </div>
+
+      {/* third section */}
+      <h1 className="text-white">What Skills I have</h1>
+      <h2 className="text-3xl font-bold text-white">My Experience</h2>
+      <div className="m-10 flex justify-center">
+        <div className="bg-sky-500 py-12 px-10 mr-7 w-[32rem] rounded-[20px]">
+          <h1 className="text-2xl mb-8 font-bold">Frontend developer</h1>
+          <div className="flex justify-between ">
+            <div className="">
+              <div className="flex justify-start mb-5">
+                <div>
+                  <IoCheckmarkCircle className="" size="1.5em" />
+                </div>
+                <div className="text-justify ml-3">
+                  <b>HTML</b>
+                  <p>Experienced</p>
+                </div>
+              </div>
+              <div className="flex justify-start mb-5">
+                <div>
+                  <IoCheckmarkCircle className="" size="1.5em" />
+                </div>
+                <div className="text-justify ml-3">
+                  <b>JavaScript</b>
+                  <p>Experienced</p>
+                </div>
+              </div>
+              <div className="flex justify-start ">
+                <div>
+                  <IoCheckmarkCircle className="" size="1.5em" />
+                </div>
+                <div className="text-justify ml-3">
+                  <b>Tailwind</b>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+            </div>
+            <div className="">
+              <div className="flex justify-start mb-5">
+                <div>
+                  <IoCheckmarkCircle className="" size="1.5em" />
+                </div>
+                <div className="text-justify ml-3">
+                  <b>CSS</b>
+                  <p>Experienced</p>
+                </div>
+              </div>
+              <div className="flex justify-start mb-5">
+                <div>
+                  <IoCheckmarkCircle className="" size="1.5em" />
+                </div>
+                <div className="text-justify ml-3">
+                  <b>Bootstrap</b>
+                  <p>Experienced</p>
+                </div>
+              </div>
+              <div className="flex justify-start ">
+                <div>
+                  <IoCheckmarkCircle className="" size="1.5em" />
+                </div>
+                <div className="text-justify ml-3">
+                  <b>React</b>
+                  <p>Experienced</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="bg-sky-500 py-12 px-10 w-[32rem] rounded-[20px]">
+          <h1 className="text-2xl mb-8 font-bold">Backend developer</h1>
+          <div className="flex justify-between ">
+            <div className="">
+              <div className="flex justify-start mb-5">
+                <div>
+                  <IoCheckmarkCircle className="" size="1.5em" />
+                </div>
+                <div className="text-justify ml-3">
+                  <b>MySql</b>
+                  <p>Experienced</p>
+                </div>
+              </div>
+              <div className="flex justify-start mb-5">
+                <div>
+                  <IoCheckmarkCircle className="" size="1.5em" />
+                </div>
+                <div className="text-justify ml-3">
+                  <b>Nest Js</b>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+              <div className="flex justify-start ">
+                <div>
+                  <IoCheckmarkCircle className="" size="1.5em" />
+                </div>
+                <div className="text-justify ml-3">
+                  <b>PostgreiSql</b>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+            </div>
+            <div className="">
+              <div className="flex justify-start mb-5">
+                <div>
+                  <IoCheckmarkCircle className="" size="1.5em" />
+                </div>
+                <div className="text-justify ml-3">
+                  <b>Expres Js</b>
+                  <p>Experienced</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
