@@ -73,8 +73,8 @@ function App() {
           className="w-96 h-96 rounded-[20px] mx-auto sm:mb-5"
         />
         <div className="">
-          <div className="lg:flex lg:justify-start sm:grid sm:grid-cols-2 gap-3 text-center">
-            <div className="card_about p-5 sm:h-36 md:mr-5 rounded-lg">
+          <div className="md:flex md:justify-center lg:justify-start sm:grid sm:grid-cols-2 gap-3 text-center">
+            <div className="card_about p-5 sm:h-36 rounded-lg">
               <p>
                 <IoMedal className="text-sky-400 mx-auto" size="1.5em" />
               </p>
@@ -82,7 +82,7 @@ function App() {
               <p className="text-white opacity-50">2+ Years Working</p>
             </div>
 
-            <div className="card_about p-5 sm:h-36 md:mr-5 rounded-lg">
+            <div className="card_about p-5 sm:h-36 rounded-lg">
               <p>
                 <IoPeople className="text-sky-400 mx-auto" size="1.5em" />
               </p>
@@ -119,7 +119,7 @@ function App() {
       <h2 className="text-3xl font-bold text-white text-center">
         My Experience
       </h2>
-      <div className="m-10 lg:flex lg:justify-center ">
+      <div className="m-10 md:flex md:justify-center sm:grid sm:justify-items-center ">
         <div className="experience_card sm:mb-5 py-12 sm:px-5 lg:px-10 mr-7 lg:w-[32rem] sm:w-[20rem] rounded-[20px]">
           <h1 className="text-2xl mb-8 font-bold text-center text-sky-400">
             Frontend developer
@@ -237,8 +237,8 @@ function App() {
       {/* Four section */}
       <h1 className="text-white text-center opacity-50">My Recent Work</h1>
       <h2 className="text-3xl font-bold text-white text-center">Portfolio</h2>
-      <div className=" grid lg:grid-cols-3 sm:grid-cols-1 lg:mx-80 justify-items-center	mt-5">
-        <div className="portofolio_card p-5 sm:w-[18rem] rounded-[20px] sm:mb-5 lg:w-[24rem] lg:mr-48 sm:mr-5">
+      <div className="grid xl:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:mx-80 lg:mx-10 justify-items-center	mt-5">
+        <div className="portofolio_card p-5 sm:w-[18rem] rounded-[20px] sm:mb-5 sm:mr-5">
           <img
             src={require("./assets/me.jpg")}
             alt="me"
@@ -252,7 +252,7 @@ function App() {
             Live Demo
           </button>
         </div>
-        <div className="portofolio_card sm:w-[18rem] p-5  rounded-[20px] sm:mb-5 lg:w-[24rem] sm:mr-5">
+        <div className="portofolio_card sm:w-[18rem] p-5  rounded-[20px] sm:mb-5  sm:mr-5">
           <img
             src={require("./assets/me.jpg")}
             alt="me"
@@ -267,7 +267,7 @@ function App() {
           </button>
         </div>
 
-        <div className="portofolio_card p-5 sm:w-[18rem] rounded-[20px] sm:mb-5 lg:w-[24rem] lg:ml-44 sm:mr-5">
+        <div className="portofolio_card p-5 sm:w-[18rem] rounded-[20px] sm:mb-5 sm:mr-5">
           <img
             src={require("./assets/me.jpg")}
             alt="me"
@@ -281,7 +281,8 @@ function App() {
             Live Demo
           </button>
         </div>
-        <div className="portofolio_card sm:w-[18rem] p-5 rounded-[20px] mt-5 lg:w-[24rem] lg:mr-48 sm:mr-5">
+
+        <div className="portofolio_card sm:w-[18rem] p-5  rounded-[20px] sm:mb-5  sm:mr-5">
           <img
             src={require("./assets/me.jpg")}
             alt="me"
@@ -295,7 +296,8 @@ function App() {
             Live Demo
           </button>
         </div>
-        <div className="portofolio_card p-5 sm:w-[18rem] rounded-[20px] mt-5 lg:w-[24rem] sm:mr-5">
+
+        <div className="portofolio_card sm:w-[18rem] p-5  rounded-[20px] sm:mb-5  sm:mr-5">
           <img
             src={require("./assets/me.jpg")}
             alt="me"
@@ -309,7 +311,7 @@ function App() {
             Live Demo
           </button>
         </div>
-        <div className="portofolio_card p-5 sm:w-[18rem] rounded-[20px]	mt-5 lg:w-[24rem] lg:ml-44 sm:mr-5">
+        <div className="portofolio_card sm:w-[18rem] p-5  rounded-[20px] sm:mb-5  sm:mr-5">
           <img
             src={require("./assets/me.jpg")}
             alt="me"
@@ -330,7 +332,7 @@ function App() {
       <h2 className="text-3xl font-bold text-white text-center">Contact Me</h2>
       <div className="mt-5 lg:flex lg:justify-center sm:grid sm:justify-items-center">
         <div className="">
-          <div className="lg:flex lg:justify-start mb-5 text-center">
+          <div className="md:flex md:justify-start mb-5 text-center">
             <div className="contact_card px-2 py-4 mr-5 sm:mb-5 rounded-lg w-56">
               <p>
                 <IoMail className="text-sky-400 mx-auto" size="1.5em" />
