@@ -2,6 +2,22 @@
 /* text-align: center; */
 /* } */
 
-.bg-image {
+.bg_image {
   box-shadow: inset 0px -700px 500px -500px #184A6E;
+}
+
+.card_about {
+  background-color: #2B2B67;
+}
+
+.contact_card {
+  background-color: #2B2B67;
+}
+
+.experience_card {
+  background-color: #2B2B67;
+}
+
+.portofolio_card {
+  background-color: #2B2B67;
 }
