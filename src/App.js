@@ -7,6 +7,7 @@ import {
   IoPeople,
   IoCreate,
   IoCheckmarkCircle,
+  IoMail,
 } from "react-icons/io5";
 
 function App() {
@@ -55,7 +56,7 @@ function App() {
           />
         </div>
         <div className="">
-          <div className="flex justify-start mb-5">
+          <div className="flex justify-start mb-5 text-center">
             <div className="bg-sky-500 p-2 mr-5 rounded-lg">
               <p>
                 <IoMedal className="text-white mx-auto" size="1.5em" />
@@ -285,6 +286,40 @@ function App() {
             Github
           </button>
           <button className="rounded-md bg-sky-400 p-3">Live Demo</button>
+        </div>
+      </div>
+
+      {/* Five section */}
+      <h1 className="text-white text-center">Get In Touch</h1>
+      <h2 className="text-3xl font-bold text-white text-center">Contact Me</h2>
+      <div className="m-10 flex justify-center">
+        <div className="">
+          <div className="flex justify-start mb-5 text-center">
+            <div className="bg-sky-500 px-2 py-4 mr-5 rounded-lg w-56">
+              <p>
+                <IoMail className="text-white mx-auto" size="1.5em" />
+              </p>
+              <p className="mt-3 mb-2 font-bold text-base">Email</p>
+              <p className="font-light">ibraputra843@gmail.com</p>
+              <p>Send a message</p>
+            </div>
+            <div className="bg-sky-500 px-2 mr-5 py-4 rounded-lg w-56">
+              <p>
+                <IoLogoLinkedin className="text-white mx-auto" size="1.5em" />
+              </p>
+              <p className="mt-3 mb-2 font-bold text-base">Linkedin</p>
+              <p className="font-light">Ibra_Nurlette</p>
+              <p>Send a message</p>
+            </div>
+            <div className="bg-sky-500 px-2 py-4 rounded-lg w-56">
+              <p>
+                <IoLogoInstagram className="text-white mx-auto" size="1.5em" />
+              </p>
+              <p className="mt-3 mb-2 font-bold text-base">Instagram</p>
+              <p className="font-light">Ibra_Nurlette</p>
+              <p>Send a message</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
