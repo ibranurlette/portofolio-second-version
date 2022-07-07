@@ -2,7 +2,16 @@
 /* text-align: center; */
 /* } */
 
+/* 1. atas */
+/* box-shadow: inset 0px 850px 500px -500px #000; */
+
+/* 2. bawah */
 .bg_image {
+  box-shadow: inset 0px -700px 500px -500px #184A6E;
+}
+
+/* 3. pojok atas kanan dan pojok bawah kiri */
+.about_image {
   box-shadow: inset 0px -700px 500px -500px #184A6E;
 }
 
@@ -40,4 +49,25 @@
 
 .contact_card:hover {
   background-color: #1F1F38;
+}
+
+.icon_footer {
+  background-color: #2B2B67;
+
+}
+
+.icon_footer:hover {
+  border-color: #2B2B67;
+}
+
+.title_footer {
+  color: #2B2B67;
+}
+
+.logo_footer {
+  color: white;
+}
+
+.logo_footer:hover {
+  color: #2B2B67;
 }

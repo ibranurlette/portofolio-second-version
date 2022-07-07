@@ -15,7 +15,7 @@ function App() {
   return (
     <div>
       {/* first section */}
-      <div className="pt-8 pb-8">
+      <div className="pt-8 pb-8" id="home">
         <div className="mb-5 text-center">
           <h1 className="text-white">Hello I'm</h1>
           <h2 className="text-3xl font-bold text-white">Ibra Nurlette</h2>
@@ -75,14 +75,18 @@ function App() {
         </div>
       </div>
       {/* second section */}
-      <h1 className="text-white text-center opacity-50">Get To Know</h1>
+      <h1 id="about" className="text-white text-center opacity-50">
+        Get To Know
+      </h1>
       <h2 className="text-3xl font-bold text-sky-400 text-center ">About Me</h2>
-      <div className="m-10 lg:grid lg:grid-cols-2">
-        <img
-          src={require("./assets/me.jpg")}
-          alt="me"
-          className="w-96 h-96 rounded-[20px] mx-auto sm:mb-5"
-        />
+      <div className="m-10 lg:grid lg:grid-cols-2 sm:grid  sm:justify-items-center">
+        <div className="about_image bg-sky-400 rounded-[20px] sm:mb-10">
+          <img
+            src={require("./assets/me.jpg")}
+            alt="me"
+            className="w-96 h-96 sm:w-60 sm:h-60 rounded-[20px] mx-auto rotate-12	hover:rotate-0 hover:transition hover:delay-150 hover:duration-300"
+          />
+        </div>
         <div className="">
           <div className="md:flex md:justify-center lg:justify-start sm:grid sm:grid-cols-2 gap-3 text-center">
             <div className="card_about p-5 sm:h-36 rounded-lg hover:border-2 hover:border-white text-white hover:text-white">
@@ -126,7 +130,9 @@ function App() {
       </div>
 
       {/* third section */}
-      <h1 className="text-white text-center opacity-50">What Skills I have</h1>
+      <h1 id="experience" className="text-white text-center opacity-50">
+        What Skills I have
+      </h1>
       <h2 className="text-3xl font-bold text-white text-center">
         My Experience
       </h2>
@@ -246,7 +252,9 @@ function App() {
       </div>
 
       {/* Four section */}
-      <h1 className="text-white text-center opacity-50">My Recent Work</h1>
+      <h1 id="portofolio" className="text-white text-center opacity-50">
+        My Recent Work
+      </h1>
       <h2 className="text-3xl font-bold text-white text-center">Portfolio</h2>
       <div className="grid xl:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:mx-80 lg:mx-10 justify-items-center	mt-5">
         <div className="portofolio_card p-5 sm:w-[18rem] rounded-[20px] sm:mb-5 sm:mr-5 hover:border-2 hover:border-white">
@@ -381,6 +389,56 @@ function App() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="bg-sky-400 w-full py-10">
+        <h2 className="title_footer text-3xl font-bold text-white text-center mb-10 ">
+          Copyright
+        </h2>
+
+        <div className="flex justify-center mb-10 font-medium	opacity-60">
+          <a className="home_footer" href="#home">
+            <p className="mr-10">Home</p>
+          </a>
+          <a href="#about">
+            <p className="mr-10">About</p>
+          </a>
+          <a href="#experience">
+            <p className="mr-10">Experience</p>
+          </a>
+          <a href="#portofolio">
+            <p>Portfolio</p>
+          </a>
+        </div>
+        <div className="flex justify-center items-center">
+          <a
+            href="https://www.linkedin.com/in/ibra-nurlette/"
+            target="_blank"
+            rel="noreferrer"
+            className="icon_footer rounded-lg p-2 mr-5 hover:bg-sky-400 hover:border-2"
+          >
+            <IoLogoLinkedin className="logo_footer" size="1.5em" />
+          </a>
+          <a
+            href="https://github.com/ibranurlette"
+            target="_blank"
+            rel="noreferrer"
+            className="icon_footer rounded-lg p-2 mr-5 hover:bg-sky-400 hover:border-2"
+          >
+            <IoLogoGithub className="logo_footer" size="1.5em" />
+          </a>
+          <a
+            href="https://www.instagram.com/ibra_nurlette/"
+            target="_blank"
+            rel="noreferrer"
+            className="icon_footer rounded-lg p-2 mr-5 hover:bg-sky-400 hover:border-2"
+          >
+            <IoLogoInstagram className="logo_footer" size="1.5em" />
+          </a>
+        </div>
+
+        <p className="mt-10 text-center font-medium	opacity-60">
+          © Copyright by ibra nurlette
+        </p>
       </div>
     </div>
   );
