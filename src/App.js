@@ -9,6 +9,11 @@ import {
   IoCreate,
   IoCheckmarkCircle,
   IoMail,
+  IoHome,
+  IoPerson,
+  IoCall,
+  IoFolderOpen,
+  IoPencil,
 } from "react-icons/io5";
 
 function App() {
@@ -84,7 +89,7 @@ function App() {
           <img
             src={require("./assets/me.jpg")}
             alt="me"
-            className="w-96 h-96 sm:w-60 sm:h-60 rounded-[20px] mx-auto rotate-12	hover:rotate-0 hover:transition hover:delay-150 hover:duration-300"
+            className="lg:w-96 lg:h-96 sm:w-60 sm:h-60 rounded-[20px] mx-auto rotate-12	hover:rotate-0 hover:transition hover:delay-150 hover:duration-300"
           />
         </div>
         <div className="">
@@ -347,7 +352,9 @@ function App() {
       </div>
 
       {/* Five section */}
-      <h1 className="text-white text-center mt-10 opacity-50">Get In Touch</h1>
+      <h1 id="contact" className="text-white text-center mt-10 opacity-50">
+        Get In Touch
+      </h1>
       <h2 className="text-3xl font-bold text-white text-center">Contact Me</h2>
       <div className="mt-5 lg:flex lg:justify-center sm:grid sm:justify-items-center">
         <div className="">
@@ -390,6 +397,8 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* Six page */}
       <div className="bg-sky-400 w-full py-10">
         <h2 className="title_footer text-3xl font-bold text-white text-center mb-10 ">
           Copyright
@@ -439,6 +448,41 @@ function App() {
         <p className="mt-10 text-center font-medium	opacity-60">
           © Copyright by ibra nurlette
         </p>
+      </div>
+
+      <div className="floating_card left-[38%]%]	 rounded-[50px]	opacity-75">
+        <div className="m-2 flex justify-center text-white">
+          <a
+            href="#home"
+            className="hover:bg-black hover:rounded-[50px] mr-3 p-5 hover:opacity-50"
+          >
+            <IoHome size="1.5em" />
+          </a>
+          <a
+            href="#about"
+            className="hover:bg-black hover:rounded-[50px] mr-3 p-5 hover:opacity-50"
+          >
+            <IoPerson size="1.5em" />
+          </a>
+          <a
+            href="#experience"
+            className="hover:bg-black hover:rounded-[50px] mr-3 p-5 hover:opacity-50"
+          >
+            <IoPencil size="1.5em" />
+          </a>
+          <a
+            href="#portofolio"
+            className="hover:bg-black hover:rounded-[50px] mr-3 p-5 hover:opacity-50"
+          >
+            <IoFolderOpen size="1.5em" />
+          </a>
+          <a
+            href="#contact"
+            className="hover:bg-black hover:rounded-[50px] p-5 hover:opacity-50"
+          >
+            <IoCall size="1.5em" />
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -71,3 +71,12 @@
 .logo_footer:hover {
   color: #2B2B67;
 }
+
+.floating_card {
+  background-color: #2B2B67;
+  position: fixed;
+  bottom: 0;
+
+  margin-bottom: 20px;
+
+}
