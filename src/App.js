@@ -22,10 +22,10 @@ function App() {
           <h1 className="text-white">Frontend Developer</h1>
         </div>
         <div className="mb-8 text-center	">
-          <button className="rounded-md text-sky-400 border-2 border-sky-400 p-3 mr-4 font-medium">
+          <button className="rounded-md text-sky-400 border-2 border-sky-400 hover:border-white p-3 mr-4 font-medium hover:text-black hover:bg-white hover:border-white">
             Download CV
           </button>
-          <button className="rounded-md bg-sky-400 border-2 border-sky-400 p-3 font-medium">
+          <button className="rounded-md bg-sky-400 border-2 border-sky-400 p-3 font-medium hover:bg-white hover:border-white">
             Let's Talk{" "}
           </button>
         </div>
@@ -36,21 +36,30 @@ function App() {
               target="_blank"
               rel="noreferrer"
             >
-              <IoLogoLinkedin className="text-sky-400" size="1.5em" />
+              <IoLogoLinkedin
+                className="text-sky-400 hover:text-white"
+                size="1.5em"
+              />
             </a>
             <a
               href="https://github.com/ibranurlette"
               target="_blank"
               rel="noreferrer"
             >
-              <IoLogoGithub className="text-sky-400 mt-4 mb-4" size="1.5em" />
+              <IoLogoGithub
+                className="text-sky-400 hover:text-white mt-4 mb-4"
+                size="1.5em"
+              />
             </a>
             <a
               href="https://www.instagram.com/ibra_nurlette/"
               target="_blank"
               rel="noreferrer"
             >
-              <IoLogoInstagram className="text-sky-400" size="1.5em" />
+              <IoLogoInstagram
+                className="text-sky-400 hover:text-white"
+                size="1.5em"
+              />
             </a>
           </div>
           <div className="bg_image bg-sky-400 lg:w-72 sm:w-64 rounded-t-[150px]">
@@ -60,7 +69,9 @@ function App() {
               className="rounded-t-[150px]"
             />
           </div>
-          <h2 className="rotate-90 mb-8 text-sky-400"> Scroll down</h2>
+          <button className="rotate-90 mb-8 text-sky-400 hover:text-white">
+            Scroll down
+          </button>
         </div>
       </div>
       {/* second section */}
@@ -74,15 +85,15 @@ function App() {
         />
         <div className="">
           <div className="md:flex md:justify-center lg:justify-start sm:grid sm:grid-cols-2 gap-3 text-center">
-            <div className="card_about p-5 sm:h-36 rounded-lg">
+            <div className="card_about p-5 sm:h-36 rounded-lg hover:border-2 hover:border-white text-white hover:text-white">
               <p>
                 <IoMedal className="text-sky-400 mx-auto" size="1.5em" />
               </p>
-              <p className="mt-4 mb-2 font-medium text-white">Experience</p>
-              <p className="text-white opacity-50">2+ Years Working</p>
+              <p className="mt-4 mb-2 font-medium">Experience</p>
+              <p className="opacity-50">2+ Years Working</p>
             </div>
 
-            <div className="card_about p-5 sm:h-36 rounded-lg">
+            <div className="card_about p-5 sm:h-36 rounded-lg hover:border-2 hover:border-white">
               <p>
                 <IoPeople className="text-sky-400 mx-auto" size="1.5em" />
               </p>
@@ -90,7 +101,7 @@ function App() {
               <p className="text-white opacity-50">300+ Worldwide</p>
             </div>
 
-            <div className="card_about sm:h-36 p-5 rounded-lg">
+            <div className="card_about sm:h-36 p-5 rounded-lg hover:border-2 hover:border-white">
               <p>
                 <IoCreate className="text-sky-400 mx-auto" size="1.5em" />
               </p>
@@ -107,7 +118,7 @@ function App() {
             portfolio website from scratch! By the end of this video, you will
           </p>
           <div className="w-[6rem]">
-            <button className="rounded-md bg-sky-400 content-start p-3">
+            <button className="rounded-md bg-sky-400 hover:bg-white content-start p-3">
               Let's Talk
             </button>
           </div>
@@ -120,7 +131,7 @@ function App() {
         My Experience
       </h2>
       <div className="m-10 md:flex md:justify-center sm:grid sm:justify-items-center ">
-        <div className="experience_card sm:mb-5 py-12 sm:px-5 lg:px-10 mr-7 lg:w-[32rem] sm:w-[20rem] rounded-[20px]">
+        <div className="experience_card sm:mb-5 py-12 sm:px-5 lg:px-10 mr-7 lg:w-[32rem] sm:w-[20rem] rounded-[20px] hover:border-2 hover:border-white">
           <h1 className="text-2xl mb-8 font-bold text-center text-sky-400">
             Frontend developer
           </h1>
@@ -185,7 +196,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="experience_card sm:mb-5 py-12 sm:px-5 lg:px-10 mr-7 lg:w-[32rem] sm:w-[20rem] rounded-[20px]">
+        <div className="experience_card sm:mb-5 py-12 sm:px-5 lg:px-10 mr-7 lg:w-[32rem] sm:w-[20rem] rounded-[20px] hover:border-2 hover:border-white">
           <h1 className="text-2xl mb-8 font-bold text-center text-sky-400">
             Backend developer
           </h1>
@@ -238,90 +249,90 @@ function App() {
       <h1 className="text-white text-center opacity-50">My Recent Work</h1>
       <h2 className="text-3xl font-bold text-white text-center">Portfolio</h2>
       <div className="grid xl:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:mx-80 lg:mx-10 justify-items-center	mt-5">
-        <div className="portofolio_card p-5 sm:w-[18rem] rounded-[20px] sm:mb-5 sm:mr-5">
+        <div className="portofolio_card p-5 sm:w-[18rem] rounded-[20px] sm:mb-5 sm:mr-5 hover:border-2 hover:border-white">
           <img
             src={require("./assets/me.jpg")}
             alt="me"
             className="w-96 h-60 rounded-[20px] mx-auto"
           />
           <h1 className="text-lg text-white text-start mt-3 mb-5">App 1</h1>
-          <button className="rounded-md text-sky-400 border-2 border-sky-400 p-3 mr-4 font-medium">
+          <button className="rounded-md text-sky-400 border-2 border-sky-400 p-3 mr-4 font-medium hover:text-black hover:bg-white hover:border-white">
             github
           </button>
-          <button className="rounded-md bg-sky-400 border-2 border-sky-400 p-3">
+          <button className="rounded-md bg-sky-400 border-2 border-sky-400 p-3 hover:bg-white hover:border-white">
             Live Demo
           </button>
         </div>
-        <div className="portofolio_card sm:w-[18rem] p-5  rounded-[20px] sm:mb-5  sm:mr-5">
+        <div className="portofolio_card sm:w-[18rem] p-5  rounded-[20px] sm:mb-5  sm:mr-5 hover:border-2 hover:border-white">
           <img
             src={require("./assets/me.jpg")}
             alt="me"
             className="w-96 h-60 rounded-[20px] mx-auto"
           />
           <h1 className="text-lg text-white text-start mt-3 mb-5">App 2</h1>
-          <button className="rounded-md text-sky-400 border-2 border-sky-400 p-3 mr-4 font-medium">
+          <button className="rounded-md text-sky-400 border-2 border-sky-400 p-3 mr-4 font-medium hover:text-black hover:bg-white hover:border-white">
             github
           </button>
-          <button className="rounded-md bg-sky-400 border-2 border-sky-400 p-3">
+          <button className="rounded-md bg-sky-400 border-2 border-sky-400 p-3 hover:bg-white hover:border-white">
             Live Demo
           </button>
         </div>
 
-        <div className="portofolio_card p-5 sm:w-[18rem] rounded-[20px] sm:mb-5 sm:mr-5">
+        <div className="portofolio_card p-5 sm:w-[18rem] rounded-[20px] sm:mb-5 sm:mr-5 hover:border-2 hover:border-white">
           <img
             src={require("./assets/me.jpg")}
             alt="me"
             className="w-96 h-60 rounded-[20px] mx-auto"
           />
           <h1 className="text-lg text-white text-start mt-3 mb-5">App 3</h1>
-          <button className="rounded-md text-sky-400 border-2 border-sky-400 p-3 mr-4 font-medium">
+          <button className="rounded-md text-sky-400 border-2 border-sky-400 p-3 mr-4 font-medium hover:text-black hover:bg-white hover:border-white">
             github
           </button>
-          <button className="rounded-md bg-sky-400 border-2 border-sky-400 p-3">
+          <button className="rounded-md bg-sky-400 border-2 border-sky-400 p-3 hover:bg-white hover:border-white">
             Live Demo
           </button>
         </div>
 
-        <div className="portofolio_card sm:w-[18rem] p-5  rounded-[20px] sm:mb-5  sm:mr-5">
+        <div className="portofolio_card sm:w-[18rem] p-5 rounded-[20px] sm:mb-5 sm:mr-5 hover:border-2 hover:border-white">
           <img
             src={require("./assets/me.jpg")}
             alt="me"
             className="w-96 h-60 rounded-[20px] mx-auto"
           />
           <h1 className="text-lg text-white text-start mt-3 mb-5">App 4</h1>
-          <button className="rounded-md text-sky-400 border-2 border-sky-400 p-3 mr-4 font-medium">
+          <button className="rounded-md text-sky-400 border-2 border-sky-400 p-3 mr-4 font-medium hover:text-black hover:bg-white hover:border-white">
             github
           </button>
-          <button className="rounded-md bg-sky-400 border-2 border-sky-400 p-3">
+          <button className="rounded-md bg-sky-400 border-2 border-sky-400 p-3 hover:bg-white hover:border-white">
             Live Demo
           </button>
         </div>
 
-        <div className="portofolio_card sm:w-[18rem] p-5  rounded-[20px] sm:mb-5  sm:mr-5">
+        <div className="portofolio_card sm:w-[18rem] p-5 rounded-[20px] sm:mb-5 sm:mr-5 hover:border-2 hover:border-white">
           <img
             src={require("./assets/me.jpg")}
             alt="me"
             className="w-96 h-60 rounded-[20px] mx-auto"
           />
           <h1 className="text-lg text-white text-start mt-3 mb-5">App 5</h1>
-          <button className="rounded-md text-sky-400 border-2 border-sky-400 p-3 mr-4 font-medium">
+          <button className="rounded-md text-sky-400 border-2 border-sky-400 p-3 mr-4 font-medium hover:text-black hover:bg-white hover:border-white">
             github
           </button>
-          <button className="rounded-md bg-sky-400 border-2 border-sky-400 p-3">
+          <button className="rounded-md bg-sky-400 border-2 border-sky-400 p-3 hover:bg-white hover:border-white">
             Live Demo
           </button>
         </div>
-        <div className="portofolio_card sm:w-[18rem] p-5  rounded-[20px] sm:mb-5  sm:mr-5">
+        <div className="portofolio_card sm:w-[18rem] p-5 rounded-[20px] sm:mb-5 sm:mr-5 hover:border-2 hover:border-white">
           <img
             src={require("./assets/me.jpg")}
             alt="me"
             className="w-96 h-60 rounded-[20px] mx-auto"
           />
           <h1 className="text-lg text-white text-start mt-3 mb-5">App 6</h1>
-          <button className="rounded-md text-sky-400 border-2 border-sky-400 p-3 mr-4 font-medium">
+          <button className="rounded-md text-sky-400 border-2 border-sky-400 p-3 mr-4 font-medium hover:text-black hover:bg-white hover:border-white">
             github
           </button>
-          <button className="rounded-md bg-sky-400 border-2 border-sky-400 p-3">
+          <button className="rounded-md bg-sky-400 border-2 border-sky-400 p-3 hover:bg-white hover:border-white">
             Live Demo
           </button>
         </div>
@@ -333,7 +344,7 @@ function App() {
       <div className="mt-5 lg:flex lg:justify-center sm:grid sm:justify-items-center">
         <div className="">
           <div className="md:flex md:justify-start mb-5 text-center">
-            <div className="contact_card px-2 py-4 mr-5 sm:mb-5 rounded-lg w-56">
+            <div className="contact_card px-2 py-4 mr-5 sm:mb-5 rounded-lg w-56 hover:border-2 hover:border-white">
               <p>
                 <IoMail className="text-sky-400 mx-auto" size="1.5em" />
               </p>
@@ -344,7 +355,7 @@ function App() {
               <p className="text-sky-400">Send a message</p>
             </div>
 
-            <div className="contact_card px-2 mr-5 py-4 rounded-lg w-56 sm:mb-5">
+            <div className="contact_card px-2 mr-5 py-4 rounded-lg w-56 sm:mb-5 hover:border-2 hover:border-white">
               <p>
                 <IoLogoLinkedin className="text-sky-400 mx-auto" size="1.5em" />
               </p>
@@ -355,7 +366,7 @@ function App() {
               <p className="text-sky-400">Send a message</p>
             </div>
 
-            <div className="contact_card px-2 py-4 rounded-lg w-56 sm:mb-5">
+            <div className="contact_card px-2 py-4 rounded-lg w-56 sm:mb-5 hover:border-2 hover:border-white">
               <p>
                 <IoLogoInstagram
                   className="text-sky-400 mx-auto"
