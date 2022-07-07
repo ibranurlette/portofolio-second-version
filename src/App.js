@@ -450,7 +450,7 @@ function App() {
         </p>
       </div>
 
-      <div className="floating_card left-[38%]%]	 rounded-[50px]	opacity-75">
+      <div className="floating_card fixed left-[50%] translate-x-[-50%] bottom-0 mb-5  rounded-[50px]	opacity-75">
         <div className="m-2 flex justify-center text-white">
           <a
             href="#home"

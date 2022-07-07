@@ -1,59 +1,23 @@
-/* .App { */
-/* text-align: center; */
-/* } */
-
-/* 1. atas */
-/* box-shadow: inset 0px 850px 500px -500px #000; */
-
-/* 2. bawah */
-.bg_image {
-  box-shadow: inset 0px -700px 500px -500px #184A6E;
-}
-
-/* 3. pojok atas kanan dan pojok bawah kiri */
+.bg_image,
 .about_image {
   box-shadow: inset 0px -700px 500px -500px #184A6E;
 }
 
-.card_about {
+.card_about,
+.contact_card,
+.experience_card,
+.portofolio_card,
+.contact_card,
+.icon_footer,
+.floating_card {
   background-color: #2B2B67;
 }
 
-.card_about:hover {
-  background-color: #1F1F38;
-}
-
-.contact_card {
-  background-color: #2B2B67;
-}
-
-.experience_card {
-  background-color: #2B2B67;
-}
-
-.experience_card:hover {
-  background-color: #1F1F38;
-}
-
-.portofolio_card {
-  background-color: #2B2B67;
-}
-
-.portofolio_card:hover {
-  background-color: #1F1F38;
-}
-
-.contact_card {
-  background-color: #2B2B67;
-}
-
+.card_about:hover,
+.experience_card:hover,
+.portofolio_card:hover,
 .contact_card:hover {
   background-color: #1F1F38;
-}
-
-.icon_footer {
-  background-color: #2B2B67;
-
 }
 
 .icon_footer:hover {
@@ -64,19 +28,11 @@
   color: #2B2B67;
 }
 
+
 .logo_footer {
   color: white;
 }
 
 .logo_footer:hover {
   color: #2B2B67;
-}
-
-.floating_card {
-  background-color: #2B2B67;
-  position: fixed;
-  bottom: 0;
-
-  margin-bottom: 20px;
-
 }
