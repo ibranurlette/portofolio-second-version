@@ -74,13 +74,13 @@ function App() {
           </div>
           <div className="bg_image bg-sky-400 lg:w-72 sm:w-64 rounded-t-[150px]">
             <img
-              src={require("./assets/me2.png")}
+              src={require("./assets/me4.png")}
               alt="me"
               className="rounded-t-[150px]"
             />
           </div>
           <button className="rotate-90 mb-8 text-sky-400 hover:text-white">
-            Scroll down
+            <a href="#contact">Scroll down</a>
           </button>
         </div>
       </div>
@@ -92,7 +92,7 @@ function App() {
       <div className="m-10 lg:grid lg:grid-cols-2 sm:grid  sm:justify-items-center">
         <div className="about_image bg-sky-400 rounded-[20px] sm:mb-10">
           <img
-            src={require("./assets/me.jpg")}
+            src={require("./assets/me4.jpg")}
             alt="me"
             className="lg:w-96 lg:h-96 sm:w-60 sm:h-60 rounded-[20px] mx-auto rotate-12	hover:rotate-0 hover:transition hover:delay-150 hover:duration-300"
           />
@@ -269,12 +269,16 @@ function App() {
       <div className="grid xl:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:mx-80 lg:mx-10 justify-items-center	mt-5">
         <div className="portofolio_card p-5 sm:w-[18rem] rounded-[20px] sm:mb-5 sm:mr-5 hover:border-2 hover:border-white">
           <img
-            src={require("./assets/me.jpg")}
+            src={require("./assets/kijangmas.jpg")}
             alt="me"
             className="w-96 h-60 rounded-[20px] mx-auto"
           />
-          <h1 className="text-lg text-white text-start mt-3 mb-5">App 1</h1>
-          <button className="rounded-md text-sky-400 border-2 border-sky-400 p-3 mr-4 font-medium hover:text-black hover:bg-white hover:border-white">
+          <h1 className="text-lg text-white text-start mt-3 mb-5">KijangMas</h1>
+          <p className="text-white">
+            Platform untuk memenuhi kebutuhan Anggota Koperasi Jaringan
+            Masyarakat Indonesia Sejahtera (KJMIS), telah tersedia di Playstore
+          </p>
+          <button className="rounded-md text-sky-400 border-2 border-sky-400 p-3 mr-4 mt-5 font-medium hover:text-black hover:bg-white hover:border-white ">
             github
           </button>
           <button className="rounded-md bg-sky-400 border-2 border-sky-400 p-3 hover:bg-white hover:border-white">
@@ -283,12 +287,18 @@ function App() {
         </div>
         <div className="portofolio_card sm:w-[18rem] p-5  rounded-[20px] sm:mb-5  sm:mr-5 hover:border-2 hover:border-white">
           <img
-            src={require("./assets/me.jpg")}
+            src={require("./assets/kijangmart.jpg")}
             alt="me"
             className="w-96 h-60 rounded-[20px] mx-auto"
           />
-          <h1 className="text-lg text-white text-start mt-3 mb-5">App 2</h1>
-          <button className="rounded-md text-sky-400 border-2 border-sky-400 p-3 mr-4 font-medium hover:text-black hover:bg-white hover:border-white">
+          <h1 className="text-lg text-white text-start mt-3 mb-5">
+            KijangMart
+          </h1>
+          <p className="text-white">
+            Platform warung digital untuk Anggota Koperasi Jaringan Masyarakat
+            Indonesia Sejahtera (KJMIS), telah tersedia di Playstore
+          </p>
+          <button className="rounded-md text-sky-400 border-2 border-sky-400 p-3 mr-4 mt-5 font-medium hover:text-black hover:bg-white hover:border-white">
             github
           </button>
           <button className="rounded-md bg-sky-400 border-2 border-sky-400 p-3 hover:bg-white hover:border-white">
@@ -456,13 +466,13 @@ function App() {
       </div>
 
       <div className="floating_card fixed left-[50%] translate-x-[-50%] bottom-0 mb-5  rounded-[50px]	opacity-75">
-        <div className="m-2 flex justify-center text-white">
+        <div className="sm:m-1 md:m-2 flex justify-center text-white">
           <a
             href="#home"
             className={
               activeMenu === "home"
-                ? "bg-white rounded-[50px] mr-3 p-5 text-black"
-                : "hover:bg-black  hover:rounded-[50px] mr-3 p-5 hover:opacity-50"
+                ? "bg-white rounded-[50px] mr-1 p-5 text-black"
+                : "hover:bg-black  hover:rounded-[50px] mr-1 p-5 hover:opacity-50"
             }
             onClick={() => setActiveMenu("home")}
           >
@@ -472,8 +482,8 @@ function App() {
             href="#about"
             className={
               activeMenu === "about"
-                ? "bg-white rounded-[50px] mr-3 p-5 text-black"
-                : "hover:bg-black  hover:rounded-[50px] mr-3 p-5 hover:opacity-50"
+                ? "bg-white rounded-[50px] mr-1 p-5 text-black"
+                : "hover:bg-black  hover:rounded-[50px] mr-1 p-5 hover:opacity-50"
             }
             onClick={() => setActiveMenu("about")}
           >
@@ -483,8 +493,8 @@ function App() {
             href="#experience"
             className={
               activeMenu === "experience"
-                ? "bg-white rounded-[50px] mr-3 p-5 text-black"
-                : "hover:bg-black  hover:rounded-[50px] mr-3 p-5 hover:opacity-50"
+                ? "bg-white rounded-[50px] mr-1 p-5 text-black"
+                : "hover:bg-black  hover:rounded-[50px] mr-1 p-5 hover:opacity-50"
             }
             onClick={() => setActiveMenu("experience")}
           >
@@ -494,8 +504,8 @@ function App() {
             href="#portofolio"
             className={
               activeMenu === "portofolio"
-                ? "bg-white rounded-[50px] mr-3 p-5 text-black"
-                : "hover:bg-black  hover:rounded-[50px] mr-3 p-5 hover:opacity-50"
+                ? "bg-white rounded-[50px] mr-1 p-5 text-black"
+                : "hover:bg-black  hover:rounded-[50px] mr-1 p-5 hover:opacity-50"
             }
             onClick={() => setActiveMenu("portofolio")}
           >
