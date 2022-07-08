@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./App.css";
 import "./index.css";
 import {
@@ -17,6 +18,8 @@ import {
 } from "react-icons/io5";
 
 function App() {
+  const [activeMenu, setActiveMenu] = useState("");
+
   return (
     <div>
       {/* first section */}
@@ -454,31 +457,56 @@ function App() {
         <div className="m-2 flex justify-center text-white">
           <a
             href="#home"
-            className="hover:bg-black hover:rounded-[50px] mr-3 p-5 hover:opacity-50"
+            className={
+              activeMenu === "home"
+                ? "bg-white rounded-[50px] mr-3 p-5 text-black"
+                : "hover:bg-black  hover:rounded-[50px] mr-3 p-5 hover:opacity-50"
+            }
+            onClick={() => setActiveMenu("home")}
           >
             <IoHome size="1.5em" />
           </a>
           <a
             href="#about"
-            className="hover:bg-black hover:rounded-[50px] mr-3 p-5 hover:opacity-50"
+            className={
+              activeMenu === "about"
+                ? "bg-white rounded-[50px] mr-3 p-5 text-black"
+                : "hover:bg-black  hover:rounded-[50px] mr-3 p-5 hover:opacity-50"
+            }
+            onClick={() => setActiveMenu("about")}
           >
             <IoPerson size="1.5em" />
           </a>
           <a
             href="#experience"
-            className="hover:bg-black hover:rounded-[50px] mr-3 p-5 hover:opacity-50"
+            className={
+              activeMenu === "experience"
+                ? "bg-white rounded-[50px] mr-3 p-5 text-black"
+                : "hover:bg-black  hover:rounded-[50px] mr-3 p-5 hover:opacity-50"
+            }
+            onClick={() => setActiveMenu("experience")}
           >
             <IoPencil size="1.5em" />
           </a>
           <a
             href="#portofolio"
-            className="hover:bg-black hover:rounded-[50px] mr-3 p-5 hover:opacity-50"
+            className={
+              activeMenu === "portofolio"
+                ? "bg-white rounded-[50px] mr-3 p-5 text-black"
+                : "hover:bg-black  hover:rounded-[50px] mr-3 p-5 hover:opacity-50"
+            }
+            onClick={() => setActiveMenu("portofolio")}
           >
             <IoFolderOpen size="1.5em" />
           </a>
           <a
             href="#contact"
-            className="hover:bg-black hover:rounded-[50px] p-5 hover:opacity-50"
+            className={
+              activeMenu === "contact"
+                ? "bg-white rounded-[50px] p-5 text-black"
+                : "hover:bg-black  hover:rounded-[50px] p-5 hover:opacity-50"
+            }
+            onClick={() => setActiveMenu("contact")}
           >
             <IoCall size="1.5em" />
           </a>
