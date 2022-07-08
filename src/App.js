@@ -31,7 +31,9 @@ function App() {
         </div>
         <div className="mb-8 text-center	">
           <button className="rounded-md text-sky-400 border-2 border-sky-400 hover:border-white p-3 mr-4 font-medium hover:text-black hover:bg-white hover:border-white">
-            Download CV
+            <a href="cv_ibra_nurlette.pdf" download>
+              Download CV
+            </a>
           </button>
           <button className="rounded-md bg-sky-400 border-2 border-sky-400 p-3 font-medium hover:bg-white hover:border-white">
             Let's Talk{" "}
